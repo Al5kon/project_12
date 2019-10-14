@@ -10,3 +10,4 @@ Create server
 ### v0.0.2 Add files and folders
 ### v0.0.3 Add handlers
 ### v0.0.4 Create routers
+### v0.0.5 Bug fixes

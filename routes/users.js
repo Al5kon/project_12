@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 /* eslint-disable no-useless-return */
 /* eslint-disable quote-props */
 /* eslint-disable quotes */
@@ -18,14 +19,14 @@ function errMessage(err) {
 }
 
 router.use('/:_id', (req, res) => {
-  fs.readFile(userPath, { encoding: 'utf8' }, (err, data) => {
+   fs.readFile(userPath, { encoding: 'utf8' }, (err, data) => {
     errMessage(err);
     const users = JSON.parse(data);
     let success = false;
     for (let i = 0; i < users.length; i++) {
       if (req.params._id === users[i]._id) {
-        res.json(users[i]);
         success = true;
+        res.send(JSON.stringify(users[i], null, 4));
       }
     }
     if (!success) {
@@ -37,7 +38,7 @@ router.use('/:_id', (req, res) => {
 router.use('/', (req, res) => {
   fs.readFile(userPath, { encoding: 'utf8' }, (err, data) => {
     errMessage(err);
-    res.send(data);
+    res.end(data);
   });
 });
 

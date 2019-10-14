@@ -11,8 +11,7 @@ routerCards.get('/', (req, res) => {
       console.log(err);
       return;
     }
-    res.send(data);
-    res.end();
+    res.end(data);
   });
 });
 
