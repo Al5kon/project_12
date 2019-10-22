@@ -1,0 +1,30 @@
+{
+  "name": "project_12",
+  "version": "0.0.1",
+  "description": "Create server",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Al5kon/project_12.git"
+  },
+  "author": "Alexey Konkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Al5kon/project_12/issues"
+  },
+  "homepage": "https://github.com/Al5kon/project_12#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "utf8": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "nodemon": "^1.19.3"
+  }
+}
